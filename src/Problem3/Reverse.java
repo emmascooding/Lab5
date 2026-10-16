@@ -13,6 +13,7 @@ public class Reverse {
         }
         System.out.println(Arrays.toString(arr));
         int temp;
+        // we switch values of the array from its bounds up to the middle
         for (int i=0; i<n/2; i++){
             temp = arr[i];
             arr[i]=arr[n-i-1];

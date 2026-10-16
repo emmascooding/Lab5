@@ -25,7 +25,7 @@ public class Account {
         }
     }
 
-    // Prints each distinct email domain found in all contacts of all address books
+    // Prints email domains found in all contacts of all address books
     public void printAllContactDomains() {
         for (AddressBook book : addressBooks) {
             for (Contact c : book.getContacts()) {
@@ -37,7 +37,7 @@ public class Account {
         }
     }
     public String getFullName(){
-        // "firstName lastName" trimmed
+        // "firstName lastName" trimmed and separated by one space
         return name==null ? "" : name.trim().replaceAll(" {2,}", " ");
     }
 

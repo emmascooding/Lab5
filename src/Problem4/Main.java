@@ -1,10 +1,14 @@
 package Problem4;
+
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args){
         ShoppingCart cart = new ShoppingCart(30);
         Scanner scan = new Scanner(System.in);
+
         boolean continueShopping = true;
+
         do {
             System.out.println("Enter the name, price and quantity of this item:");
             String name = scan.next();
